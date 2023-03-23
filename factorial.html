@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="num" >
+        <input type="submit" name="" id="" onclick="fca()">
+    </form>
+</body>
+<Script>
+    function fca(){
+    function factorial(num){
+      console.log((num));
+      let fact=1;
+     if(num > 1){
+    for(var i = 1; i<=num; i++){
+      fact = fact*i;
+    }
+    return fact;
+  }
+  else{
+    return "number has to be positive."
+  }  
+    }
+    var num=document.getElementById('num').value;
+answer = factorial(num)
+console.log("Factorial of " + num + " : " + answer);
+document.writeln("Factorial of " + num + " : " + answer);
+  }
+
+</Script>
+</html>
